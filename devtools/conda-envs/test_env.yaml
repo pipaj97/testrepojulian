@@ -4,6 +4,10 @@ dependencies:
     # Base depends
   - python
   - pip
+  - atomium
+  - sphinx
+  - sphinx_rtd_theme
+
 
     # Testing
   - pytest
