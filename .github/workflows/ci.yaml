@@ -46,7 +46,7 @@ jobs:
       shell: bash
       run: |
         . devtools/scripts/initialize_conda.sh
-        pytest -v --cov=kinoml --cov-report=xml --color=yes kinoml/tests/
+        pytest -v --cov=testrepojulian --cov-report=xml --color=yes testrepojulian/tests/
     - name: CodeCov
       uses: codecov/codecov-action@v1
       with:
