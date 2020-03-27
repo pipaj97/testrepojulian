@@ -7,7 +7,7 @@ dependencies:
   - atomium
   - sphinx
   - sphinx_rtd_theme
-  - flake8
+  #- flake8
 
 
     # Testing
