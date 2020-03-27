@@ -4,7 +4,6 @@ dependencies:
     # Base depends
   - python
   - pip
-  - atomium
   - sphinx
   - sphinx_rtd_theme
   - flake8
@@ -18,5 +17,5 @@ dependencies:
     # Pip-only installs
   - pip:
   #  - codecov
-
+  - atomium
 
