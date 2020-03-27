@@ -1,3 +1,4 @@
+#!/bin/bash
 name: CI
 
 on: [push, pull_request]
@@ -24,9 +25,9 @@ jobs:
     - name: Create environment for package
       shell: bash
       run: |
-        sudo . devtools/scripts/initialize_conda.sh
-        sudo conda info
-        sudo python devtools/scripts/create_conda_env.py -n=test -p=${{ matrix.python-version }} devtools/conda-envs/test_env.yaml
+        . devtools/scripts/initialize_conda.sh
+        conda info
+        python devtools/scripts/create_conda_env.py -n=test -p=${{ matrix.python-version }} devtools/conda-envs/test_env.yaml
     - name: Install package
       shell: bash
       run: |
