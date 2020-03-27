@@ -24,9 +24,9 @@ jobs:
     - name: Create environment for package
       shell: bash
       run: |
-        . devtools/scripts/initialize_conda.sh
-        conda info
-        python devtools/scripts/create_conda_env.py -n=test -p=${{ matrix.python-version }} devtools/conda-envs/test_env.yaml
+        sudo . devtools/scripts/initialize_conda.sh
+        sudo conda info
+        sudo python devtools/scripts/create_conda_env.py -n=test -p=${{ matrix.python-version }} devtools/conda-envs/test_env.yaml
     - name: Install package
       shell: bash
       run: |
